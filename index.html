@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TF Store</h1>
+            <ul class="menu">
+                <li>
+                    <a href="#sobrealoja">Sobre a loja</a>
+                </li>
+                <li>
+                    <a href="#produtos">Produtos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Menu</button>
+        </div>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="sobrealoja" id="sobrealoja">
+                    <div>
+                        <img src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    <div>
+                        <h2>Sobre a loja</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid itaque velit, veniam, tempore quasi animi porro quis earum incidunt excepturi, temporibus modi ea eligendi accusamus. Nihil voluptate porro omnis dignissimos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo pariatur mollitia error ut maiores est quia, ab quis maxime incidunt fugiat nam voluptates, iure ea, culpa ipsam vero omnis?</p>
+                    </div>
+            </section>
+            <section class="produto" id="produtos">
+                <h2>Produtos</h2>
+                <div class="produtos">
+                    <article class="produto">
+                            <img src="https://img.ltwebstatic.com/images3_pi/2021/06/07/1623031319e028548ab0d9ed3ee4eae81708a86c68_thumbnail_600x.webp" alt="" />
+                            <h3>Camiseta Masculina Casual</h3>
+                            <p>Camiseta masculina confortável para utilizar no dia a dia</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="produto">
+                            <img src="https://img.ltwebstatic.com/images3_pi/2021/12/02/1638413779fb909cda5486b7f533388dc0374ad55d_thumbnail_600x.webp" alt="" />
+                            <h3>Camiseta Masculina Casual</h3>
+                            <p>Camiseta masculina confortável para utilizar no dia a dia</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="produto">
+                            <img src="https://img.ltwebstatic.com/images3_pi/2021/12/29/1640754991072e6c9c1041a2abef593b10af22a227_thumbnail_600x.webp" alt="" />
+                            <h3>Camiseta Masculina Casual</h3>
+                            <p>Camiseta masculina confortável para utilizar no dia a dia</p>
+                            <button type="button">Adicionar ao carrinho</button>    
+                    </article>
+                    <article class="produto">
+                            <img src="https://img.ltwebstatic.com/images3_pi/2022/07/08/1657264955ffb31e357d58b3cd459e3a2bb9f9029d_thumbnail_600x.webp" alt="" />
+                            <h3>Camiseta Masculina Casual</h3>
+                            <p>Camiseta masculina confortável para utilizar no dia a dia</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        });
+    </script>
+</body>
+</html>
